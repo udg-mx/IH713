@@ -13,16 +13,19 @@ body {
     padding: 0;
     line-height: 1.5;
     font-family: "Noto Sans";
+    font-size: medium;
+    color: black;
 }
 
 img {
     width: 300px;
 }
 a {
-
+    color: rgb(255, 240, 113);
+    text-decoration: none;
 }
 a:hover {
-
+    text-decoration: underline;
 }
 h1 {
     font-size: 50px;
@@ -37,16 +40,17 @@ h1, h2 {
 .contenido {
     width: 800px;
     margin: 0 auto;
+    padding: 60px 0 60px 0;
+
 }
 
 
 /* Perfil
 ------------------------------------*/
 header {
-    background: #2e3061;
+    background: rgb(46, 48, 97);
     color: #F7FFF7;
     text-align: center;
-    padding: 60px 0 80px 0;
     margin-bottom: 0;
 }
 header h1 {
@@ -67,15 +71,11 @@ header p
 /* Proyectos
 ------------------------------------*/
 .proyectos {
-    background: #f7fff7;
+    background: rgb(247, 255, 247);
     margin-top: 0;
-    padding: 5px 0 60px 0;
 }
 .proyectos a {
-    color: #2F3061;
-}
-.proyectos h2 {
-    padding-top: 40px;
+    color: rgb(47, 48, 97);
 }
 .proyectos .btn {
     color: #F7FFF7;
@@ -105,18 +105,16 @@ header p
 /* Experiencia laboral
 ------------------------------------*/
 .experiencia-laboral {
-    padding: 40px 0 60px 0;
     background: #A1C6D7;
 }
-.experiencia-laboral a
-{
-    color: #fff071;
+.experiencia-laboral h2 {
+    margin-top: 0;
 }
 
 /* Educación
 ------------------------------------*/
-.educacion {
-    padding: 50px 0 50px 0;
+.educacion h2 {
+    margin-top: 0;
 }
 
 
@@ -126,11 +124,6 @@ footer {
     background: #343434;
     color: #F7FFF7;
     text-align: center;
-    padding: 40px 0;
-}
-footer a
-{
-    color: #fff071;
 }
 .lista-contacto {
     list-style-type: none;
