@@ -1,5 +1,6 @@
 /* Estilos globales
 ------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html {
     box-sizing: border-box;
 }
@@ -11,7 +12,9 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
+    font-family: "Noto Sans";
 }
+
 img {
     width: 300px;
 }
@@ -40,19 +43,39 @@ h1, h2 {
 /* Perfil
 ------------------------------------*/
 header {
-    background: black;
+    background: #2e3061;
     color: #F7FFF7;
     text-align: center;
+    padding: 60px 0 80px 0;
+    margin-bottom: 0;
+}
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
+header h2 {
+    margin-top: 0;
+}
+
+header p
+{
+    padding: 0;
+    margin-bottom: 0;
+}
 
 /* Proyectos
 ------------------------------------*/
 .proyectos {
-    background: lightblue;
+    background: #f7fff7;
+    margin-top: 0;
+    padding: 5px 0 60px 0;
 }
 .proyectos a {
     color: #2F3061;
+}
+.proyectos h2 {
+    padding-top: 40px;
 }
 .proyectos .btn {
     color: #F7FFF7;
@@ -72,6 +95,7 @@ header {
 }
 .proyecto-item img {
     margin-right: 20px;
+    float: left;
 }
 .proyecto-item h3 {
     margin-top: 0;
@@ -81,13 +105,19 @@ header {
 /* Experiencia laboral
 ------------------------------------*/
 .experiencia-laboral {
+    padding: 40px 0 60px 0;
     background: #A1C6D7;
 }
-
+.experiencia-laboral a
+{
+    color: #fff071;
+}
 
 /* Educación
 ------------------------------------*/
-
+.educacion {
+    padding: 50px 0 50px 0;
+}
 
 
 /* Contacto
@@ -96,6 +126,11 @@ footer {
     background: #343434;
     color: #F7FFF7;
     text-align: center;
+    padding: 40px 0;
+}
+footer a
+{
+    color: #fff071;
 }
 .lista-contacto {
     list-style-type: none;
