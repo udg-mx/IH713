@@ -1,0 +1,109 @@
+/* Estilos globales
+------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a {
+
+}
+a:hover {
+
+}
+h1 {
+    font-size: 50px;
+    line-height: 1;
+}
+h2 {
+    font-size: 25px;
+}
+h1, h2 {
+    font-weight: 400;
+}
+.contenido {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Perfil
+------------------------------------*/
+header {
+    background: black;
+    color: #F7FFF7;
+    text-align: center;
+}
+
+
+/* Proyectos
+------------------------------------*/
+.proyectos {
+    background: lightblue;
+}
+.proyectos a {
+    color: #2F3061;
+}
+.proyectos .btn {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.proyectos .btn:hover {
+    background: rgba(47, 48, 97, 80%);
+}
+.proyecto-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+.proyecto-item img {
+    margin-right: 20px;
+}
+.proyecto-item h3 {
+    margin-top: 0;
+}
+
+
+/* Experiencia laboral
+------------------------------------*/
+.experiencia-laboral {
+    background: #A1C6D7;
+}
+
+
+/* Educación
+------------------------------------*/
+
+
+
+/* Contacto
+------------------------------------*/
+footer {
+    background: #343434;
+    color: #F7FFF7;
+    text-align: center;
+}
+.lista-contacto {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.lista-contacto a {
+    padding: 15px;
+    display: inline-block;
+}
