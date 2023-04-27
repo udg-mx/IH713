@@ -1,0 +1,140 @@
+/* Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body {
+    background-color: #FFF;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+/* Navigation */
+.nav {
+    background-color: rgb(92, 186, 157);
+    color: #FFFFFF;
+}
+
+
+/* Toggle button */
+#toggle-trigger {
+    display: none;
+}
+
+.toggle-buttons {
+    cursor: pointer;
+    margin: 0.6rem 1rem 0 0;
+    position: absolute;
+    right: 0;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.toggle-buttons .close {
+    display: none;
+}
+
+/* Hamburger menu icon  */
+.toggle-buttons .burger::before {
+    content: "\2261";
+}
+
+/* Close menu icon  */
+.toggle-buttons .close::before {
+    content: "\00d7";
+}
+
+/* Menu */
+ul.menu {
+    margin: 0 15px 0 0;
+    padding: 10px;
+}
+
+/* Navigation menu list item */
+.menu li {
+    width: 100%;
+}
+
+
+
+/* Navigation menu container */
+.menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 1rem;
+}
+
+/* Navigation menu list item */
+.menu li {
+    display: none;
+    list-style-type: none;
+}
+
+/* First navigation menu  item aka "logo" */
+.menu li:first-child {
+    display: block;
+    margin-right: auto;
+}
+
+/* Logo / Header */
+.menu h1 {
+    font-size: 1.2rem;
+}
+
+/* menu link */
+.menu a {
+    color: inherit;
+    font-size: .9rem;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+/* Show navigation menu items when checkbox is checked */
+#toggle-trigger:checked ~ .menu li {
+    display: block;
+}
+
+/* Show close icon when checkbox is checked */
+#toggle-trigger:checked ~ label.toggle-buttons .close {
+    display: block;
+}
+
+/* Hide hamburger menu icon when checkbox is checked */
+#toggle-trigger:checked ~ label.toggle-buttons .burger {
+    display: none;
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 560px) {
+    
+    /* Hide toggle buttons on larger screens */
+    .toggle-buttons {
+        display: none;
+    }
+
+    /* Navigation menu container larger screens */
+    .menu {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    /* Navigation menu item for larger screens */
+    .menu li {
+        display: inline-block;
+        width: auto;
+    }
+
+    /* Navigation menu link larger screens */
+    .menu a {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+}
